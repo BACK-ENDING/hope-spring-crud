@@ -16,6 +16,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	compileOnly('org.springframework.boot:spring-boot-devtools')
+	implementation 'com.h2database:h2:2.1.214'
+	implementation "org.springframework.boot:spring-boot-starter-jdbc"
 }
 
 tasks.named('test') {
