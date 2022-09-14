@@ -1,11 +1,19 @@
 package com.hope.MSGcrud.account;
 
+
 public class Account {
     private long id;
     private String email;
 
     public Account(long id, String email) {
+        this.id = id;
+        this.email = email;
     }
+
+    public Account(String email) {
+        this.email = email;
+    }
+
 
     public long getId() {
         return id;
