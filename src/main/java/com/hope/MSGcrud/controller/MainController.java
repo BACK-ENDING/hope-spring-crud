@@ -10,4 +10,9 @@ public class MainController {
     public String index() {
         return "index.html";
     }
+
+    @GetMapping("/thymeleaf")
+    public String thymeleaf(){
+        return "thymeleaf";
+    }
 }
