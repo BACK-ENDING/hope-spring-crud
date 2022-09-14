@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com"> <!-- xmlns:th를 설정하지 않으면 에디터에서 경고가 표시되어 신경쓰임 -->
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+</head>
+<body>
+<div>
+  account count : <span th:text="${count}"></span>
+</div>
+<br/><br/>
+<div>[account list]</div><br/>
+<table border="1">
+  <tr>
+    <th>id</th>
+    <th>email</th>
+  </tr>
+  <tr th:each="account : ${accounts}">
+    <td th:text="${account.id}"></td>
+    <td><a href="/account/1" th:href="@{/account/{id}(id=${account.id})}" th:text="${account.email}"></a></td>
+  </tr>
+</table>
+
+<a th:href="@{/account/add}" href="/account/add">account 추가</a>
+</body>
+</html>

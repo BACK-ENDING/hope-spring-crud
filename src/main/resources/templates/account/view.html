@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글</title>
+</head>
+<body>
+
+<div>
+  email : <span th:text="${account.email}"></span>
+</div>
+
+<div>
+  <a href="/account/list" th:href="@{/account/list}">목록</a> <br/>
+  <a href="/account/1/modify" th:href="@{/account/{id}/modify(id=${account.id})}">수정하기</a> <br/>
+  <form method="post" th:action="@{/account/{id}/delete(id=${account.id})}">
+    <button type="submit">삭제하기</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hope crud</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/account/add}">
+  Email : <input type="text" name="email" />
+  <button type="submit">추가</button>
+</form>
+<br/>
+<a href="/account/list" th:href="@{/account/list}">account list</a>
+
+</body>
+</html>

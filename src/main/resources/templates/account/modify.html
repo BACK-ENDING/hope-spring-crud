@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 수정</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/account/{id}/modify(id=${account.id})}">
+    Email : <input type="text" name="email" th:value="${account.email}" />
+    <button type="submit">수정</button>
+</form>
+<br/>
+<a href="/account/list" th:href="@{/account/list}">account list</a>
+
+</body>
+</html>
