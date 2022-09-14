@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AcountService {
+public class AccountService {
 
     @Autowired
     private JdbcAccountRepository jdbcAccountRepository;
