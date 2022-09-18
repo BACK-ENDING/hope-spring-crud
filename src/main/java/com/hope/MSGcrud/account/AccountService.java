@@ -1,19 +1,15 @@
 package com.hope.MSGcrud.account;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class AccountService {
-
-    @Autowired
     private final JdbcAccountRepository jdbcAccountRepository;
 
-    public AccountService(JdbcAccountRepository jdbcAccountRepository) {
-        this.jdbcAccountRepository = jdbcAccountRepository;
-    }
 
     public int count(){
         return jdbcAccountRepository.count();
