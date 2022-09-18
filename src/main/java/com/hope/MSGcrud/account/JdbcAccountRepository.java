@@ -35,7 +35,7 @@ public class JdbcAccountRepository implements AccountRepository{
             return ps;
         }, keyHolder);
 
-        return (long)keyHolder.getKey();
+        return (int)keyHolder.getKey();
 
         // 자동 생성되는 키를 받을 수 없다. 성공 또는 실패. 0 또는 1만 반환
         // return jdbcTemplate.update("insert into accounts (email) values (?)",
@@ -51,7 +51,7 @@ public class JdbcAccountRepository implements AccountRepository{
 
     @Override
     public int deleteById(Long id) {
-        return jdbcTemplate.update("delete account where id = ?", id);
+        return jdbcTemplate.update("delete accounts where id = ?", id);
     }
 
     @Override
