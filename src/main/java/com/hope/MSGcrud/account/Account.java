@@ -1,10 +1,7 @@
 package com.hope.MSGcrud.account;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -13,6 +10,14 @@ import lombok.Setter;
 public class Account {
     private Long id;
     private String email;
+
+    public Account(String email) {
+        this.email = email;
+    }
+
+    public Account(Long id) {
+        this.id = id;
+    }
 
     @Override
     public String toString(){
