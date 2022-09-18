@@ -9,7 +9,11 @@ import java.util.List;
 public class AccountService {
 
     @Autowired
-    private JdbcAccountRepository jdbcAccountRepository;
+    private final JdbcAccountRepository jdbcAccountRepository;
+
+    public AccountService(JdbcAccountRepository jdbcAccountRepository) {
+        this.jdbcAccountRepository = jdbcAccountRepository;
+    }
 
     public int count(){
         return jdbcAccountRepository.count();

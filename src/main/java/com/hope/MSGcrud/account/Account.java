@@ -2,10 +2,10 @@ package com.hope.MSGcrud.account;
 
 
 public class Account {
-    private long id;
+    private Long id;
     private String email;
 
-    public Account(long id, String email) {
+    public Account(Long id, String email) {
         this.id = id;
         this.email = email;
     }
@@ -19,7 +19,7 @@ public class Account {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
