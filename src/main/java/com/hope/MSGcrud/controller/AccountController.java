@@ -1,7 +1,7 @@
 package com.hope.MSGcrud.controller;
 
 import com.hope.MSGcrud.account.Account;
-import com.hope.MSGcrud.account.AccountService;
+import com.hope.MSGcrud.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,5 +1,6 @@
-package com.hope.MSGcrud.account;
+package com.hope.MSGcrud.repository;
 
+import com.hope.MSGcrud.account.Account;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,7 +1,8 @@
-package com.hope.MSGcrud.account;
+package com.hope.MSGcrud.repository;
 
+import com.hope.MSGcrud.account.Account;
+import com.hope.MSGcrud.repository.AccountRepository;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -16,7 +17,7 @@ import java.util.Optional;
 
 @Repository
 @NoArgsConstructor
-public class JdbcAccountRepository implements AccountRepository{
+public class JdbcAccountRepository implements AccountRepository {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;

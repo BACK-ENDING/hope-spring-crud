@@ -1,8 +1,8 @@
-package com.hope.MSGcrud.account;
+package com.hope.MSGcrud.service;
 
-import lombok.NoArgsConstructor;
+import com.hope.MSGcrud.account.Account;
+import com.hope.MSGcrud.repository.JdbcAccountRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
